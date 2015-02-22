@@ -1,0 +1,28 @@
+{
+  "name": "Cliv App Site",
+  "version": "0.1.0",
+  "authors": [
+    "Ethan Taylor <etaylor1016@gmail.com>"
+  ],
+  "description": "Material Design Cliv App Site",
+  "keywords": [
+    "Polymer",
+    "Material",
+    "Design",
+    "cliv",
+    "wallpapers"
+  ],
+  "license": "MIT",
+  "homepage": "ethantaylor.me",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.5.5",
+    "platform": "polymer/platform#~0.4.2"
+  }
+}
