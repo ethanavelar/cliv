@@ -69,15 +69,12 @@
             background-size: cover;
         }
         img.nexus {
-            position: absolute;
             width: 325px;
             height: 520px;
-            top: 41vh;
-            left: 50%;
-            transform: translate(-50%, 0);
-            -webkit-transform: translate(-50%, 0);
-            -moz-transform: translate(-50%, 0);
-            -ms-transform: translate(-50%, 0);
+            padding-top: 27vh;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             z-index: 3;
         }
         h2.heading {
@@ -296,9 +293,10 @@
     
     <main>
         <section class="head">
-            <div class="mainImage"></div>
+            <div class="mainImage">
+                <img class="nexus" src="img/nexus5.png">
+            </div>
             <h2 class="heading">Modern Wallpapers</h2>
-            <img class="nexus" src="img/nexus5.png">
         </section>
         <section class="subhead">
             <h2>Get it Now on Google Play</h2>
