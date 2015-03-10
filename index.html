@@ -12,7 +12,7 @@
     <script src="bower_components/platform/platform.js"></script>
     <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
     <link rel="import" href="bower_components/polymer/polymer.html">
-    <link rel="import" href="elements.html">
+    <link rel="import" href="imports.html">
     
     <style shim-shadowdom>
         html, body {
@@ -221,9 +221,79 @@
             background-position: center;
             display: none;
         }
+        section.quote {
+            width: 100vw;
+            height: 60vh;
+            background-color: white;
+            position: relative;
+            z-index: 5;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+            -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+            -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        }
+        
+        h2.center { 
+            text-align: center;
+            margin: 0px;
+        }
+        
+        div.email {
+            font-weight: 300;
+            margin-right: 36px;
+            
+        }
         
         
+        div.email core-icon {
+            padding-right: 25px;
+        }
         
+        section.contact {
+            max-width: 600px;
+            min-height: 50px;
+            margin: 0 auto;
+            margin-top: 10vh;
+        }
+        
+        section.contact div.email:first-child {
+            float: left;
+        }
+        section.contact div.email:last-child {
+            float: right;
+        }
+        
+        section.socialMedia {
+            padding-top: 10vh;
+            width: 130px;
+            margin: 0 auto;
+        }  
+        footer {
+            position: relative;
+            z-index: 3;
+            background-color: #7CB442;
+            width: 100vw;
+            height: 70vh;
+            color: white;
+        }
+        
+        footer h2 {
+            font-weight: 300;
+            margin: 0px;
+            text-align: center;
+            font-size: 2em;
+            padding-top: 17vh;
+            letter-spacing: 6px;
+        }
+        footer address {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            bottom: 50px;
+            margin-top: 5vh;
+        }
         @media screen and (max-width: 1060px) {
             section.about div:first-child p{
                 font-weight: 300;
@@ -326,14 +396,26 @@
                 </p>
             </div>
         </section>
-        
+        <section class="quote">
+
+        </section>
     
     </main>
     
     <footer> 
     
-    
-    
+        <h2>POLAR DESIGNS</h2>
+        <section class="contact">
+            <div class="email"><core-icon icon="mail"></core-icon>elifinn@me.com</div>
+            <div class="email"><core-icon icon="mail"></core-icon>etaylor1016@gmail.com</div>
+        </section>
+        <section class="socialMedia">
+            <paper-icon-button class="custom" src="img/ic_google_plus_white_48dp.png" aria-label="gplus" title="gplus"></paper-icon-button>
+            <paper-icon-button class="custom" src="img/ic_twitter_white_48dp.png" aria-label="twitter" title="twitter"></paper-icon-button>
+            <paper-icon-button class="custom" src="img/ic_facebook_white_48dp.png" aria-label="facebook" title="facebook"></paper-icon-button>
+        </section>
+        <address>© 2015 Polar Design Company</address>
+        
     </footer>     
 </body>
 </html>
