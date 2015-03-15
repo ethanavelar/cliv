@@ -20,7 +20,7 @@
     "tag": "0.4.2",
     "commit": "a2c58864021992690e6ee9ba170fbfa87af5bc9c"
   },
-  "_source": "git://github.com/Polymer/platform.git",
+  "_source": "git://github.com/polymer/platform.git",
   "_target": "~0.4.2",
-  "_originalSource": "Polymer/platform"
+  "_originalSource": "polymer/platform"
 }
